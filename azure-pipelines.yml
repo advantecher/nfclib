@@ -15,5 +15,5 @@ steps:
 
 - script: |
     git remote add azure https://wise-deviceon@dev.azure.com/wise-deviceon/ePaper%20Core/_git/App%20-%20NFC%20Sample%20App%20%28Android%29
-    git push azure main
+    git push azure master
   displayName: 'Push to Azure Repos'
