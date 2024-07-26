@@ -31,7 +31,7 @@ dependencyResolutionManagement {
 [Tag] must be replaced as the specific version, such as [1.1.0].
 ```java=
 dependencies {
-    implementation 'com.github.fabian415:nfclib:Tag'
+    implementation 'com.github.advantecher:nfclib:Tag'
 }
 ```
 
@@ -50,18 +50,18 @@ dependencies {
 [Tag] must be replaced as the specific version, such as [1.1.0].
 ```xml=
 <dependency>
-    <groupId>com.github.fabian415</groupId>
+    <groupId>com.github.advantecher</groupId>
     <artifactId>nfclib</artifactId>
     <version>Tag</version>
 </dependency>
 ```
 
 ### JavaDoc
-https://fabian415.github.io/nfclib/
+https://advantecher.github.io/nfclib/
 
 ### Source Code
 You can download this sample project from the following link:
-https://github.com/fabian415/nfclib.git
+https://github.com/advantecher/nfclib.git
 
 * Main Activity Page
 ![Main Activity Page](./images/image_1.jpg)
