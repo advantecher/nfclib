@@ -1,0 +1,19 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    git remote add azure https://wise-deviceon@dev.azure.com/wise-deviceon/ePaper%20Core/_git/App%20-%20NFC%20Sample%20App%20%28Android%29
+    git push azure main
+  displayName: 'Push to Azure Repos'
