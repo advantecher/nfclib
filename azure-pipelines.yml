@@ -16,11 +16,9 @@ steps:
 - script: |
     git clone https://github.com/advantecher/nfclib.git test
     cd test
-    git remote add azure https://wise-deviceon@dev.azure.com/wise-deviceon/ePaper%20Core/_git/App%20-%20NFC%20Sample%20App%20%28Android%29
+    git remote add --mirror=fetch secondary https://wise-deviceon@dev.azure.com/wise-deviceon/ePaper%20Core/_git/App%20-%20NFC%20Sample%20App%20%28Android%29
     git config --global user.email "fabian.chung@advantech.com"
     git config --global user.name "Fabian Chung"
-    git add .
-    git commit -m "update"
-    git branch -M main
-    git push azure main
+    git fetch origin
+    git push secondary --all
   displayName: 'Push to Azure Repos'
